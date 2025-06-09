@@ -1,6 +1,6 @@
 import { AudioContext, OscillatorNode, GainNode, BiquadFilterNode } from 'node-web-audio-api';
 
-export async function createRealisticPiano(fundamental: number = 261.63): Promise<void> {
+export async function playnote(fundamental: number = 261.63): Promise<void> {
     const audioContext = new AudioContext();
     
     const startTime = audioContext.currentTime;
